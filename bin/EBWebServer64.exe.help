@@ -1,0 +1,7 @@
+EBWebServer Help Document
+=========================
+
+Usage:
+	EBWebServer 		--webroot=<WebRootDir>		<--listen=address:port|--listen6=addressv6:port> 		--api-handler=<API Handler File> 		--auth-type=(none|authkey|token|bearer) 		<(--tokens=token1|token2|...|tokenN)|(--bearer-tokens=user1:password1|...|userN:passwordN)> 		[--start-signal=<decimal_integer>] [--stop-signal=<decimal_integer>] 		[--ssl=<PublicCert>|<PrivatePEM>]
+Example:
+	EBWebServer --webroot=./webResource/webroot/ --listen=127.0.0.1:8888 		--api-handler=./webResource/webapi.dll 		--auth-type=(none|authkey|token|bearer) 		--tokens=aaaaa|bbbbb|ccccc --bearer-tokens=user:password|aaa:bbb 		--start-signal=1234 --stop-signal=5678 		--ssl=cert.cer|cert.pem
